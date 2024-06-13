@@ -25,3 +25,16 @@ end
 inputs.each do |input|
   puts input
 end
+
+# 自己紹介
+input_line1 = gets
+input_line2 = gets
+input_line3 = gets
+
+puts "name: #{input_line1}"
+puts "language: #{input_line2}"
+puts "hitokoto: #{input_line3}"
+
+# Dランク
+# 1 つの文字列を出力 Ruby編
+puts "paiza"
