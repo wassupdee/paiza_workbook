@@ -25,3 +25,6 @@ puts array.join(' ')
   print n
   print ' '
 end
+
+#1000個の数値を出力
+puts (1..1000).to_a.join(' ')
