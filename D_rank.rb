@@ -54,3 +54,14 @@ last = gets.chomp.to_i
 input = gets
 a = input.split
 puts a.join(",")
+
+# バーティカルライン区切りで 3 つの文字列を出力 (paizaランク D 相当)
+a = []
+3.times { a << gets.chomp }
+puts a.join("|") # 間に入れるのであれば、配列からjoinを使うのが理想
+
+# カンマ区切りで 10 個出力 1 (paizaランク D 相当)
+n = gets.chomp
+p = n.split(" ")
+
+p.each {|s| print s + "," }
