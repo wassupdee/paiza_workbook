@@ -25,3 +25,13 @@ c = gets.chomp
 
 index = s.index(c)
 puts index + 1　# 配列の様に、１つズレるため
+
+# 文字列の連結
+n = gets.to_i
+a = []
+
+n.times do
+ a << gets.chomp 
+end
+
+puts a.join
