@@ -22,3 +22,20 @@ puts a
 n = gets.to_i
 a = gets.split.map(&:to_i)
 puts a
+
+# i番目の出力 1
+k = gets.to_i
+a = %w[1 3 5 4 6 2 1 7 1 5]
+puts a[k-1]
+
+# i番目の出力 2
+k = gets.to_i
+a = gets.split.map(&:to_i)
+puts a[k-1]
+
+
+# i番目の出力 Boss 
+i = gets.split.map(&:to_i)
+a = gets.split.map(&:to_i)
+
+puts a[i[1]-1]
