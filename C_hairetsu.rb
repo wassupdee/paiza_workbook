@@ -39,3 +39,15 @@ i = gets.split.map(&:to_i)
 a = gets.split.map(&:to_i)
 
 puts a[i[1]-1]
+
+
+# 【二次元配列の入出力】i番目の出力 Boss
+n, m, k, l = gets.split.map(&:to_i)
+
+a = []
+
+n.times do
+    a << gets.split.map(&:to_i)
+end
+puts a[k-1][l-1] # 要素番号を続けて指定できる
+
