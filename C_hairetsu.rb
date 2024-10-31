@@ -56,3 +56,10 @@ puts a[k-1][l-1] # 要素番号を続けて指定できる
 n, m = gets.split.map(&:to_i)
 a = gets.split.map(&:to_i)
 puts a.count(n)
+
+
+# 【文字列の配列】辞書順に出力 Boss Ruby編
+n, k = gets.split.map(&:to_i)
+a = gets.split.sort
+puts a[k-1]
+
