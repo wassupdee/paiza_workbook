@@ -51,3 +51,8 @@ n.times do
 end
 puts a[k-1][l-1] # 要素番号を続けて指定できる
 
+
+# 【配列の検索】何個ある? Boss Ruby編
+n, m = gets.split.map(&:to_i)
+a = gets.split.map(&:to_i)
+puts a.count(n)
