@@ -63,3 +63,29 @@ n, k = gets.split.map(&:to_i)
 a = gets.split.sort
 puts a[k-1]
 
+
+# 
+
+### 正
+n = gets.to_i
+
+a = [0, 1]
+
+(n-2).times do
+    a << a[-2] + a[-1] # 後ろの配列を取りにいく。このように一つ計算した結果を配列要素に入れていくことで、情報を保持して計算を繰り返すことができる。
+end
+puts a
+
+
+
+
+
+### 誤回答
+n = gets.to_i
+a = [0, 1]
+
+(n-2).times do
+    a << a[n-3] + a[n-2]　# これだと、nが10のとき、a[7]という存在しない要素を参照してしまう
+end
+
+puts a
