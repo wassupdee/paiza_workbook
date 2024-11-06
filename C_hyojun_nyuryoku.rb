@@ -16,3 +16,10 @@ puts %w[ one two three four five ]
 # 半角スペース区切りの 1,000 個の入力
 a = gets.split
 puts a
+
+# 1,000行の整数の入力
+a = []
+1000.times do
+    a << gets.to_i
+end
+puts a
