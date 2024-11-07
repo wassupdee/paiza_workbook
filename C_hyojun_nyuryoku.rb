@@ -23,3 +23,11 @@ a = []
     a << gets.to_i
 end
 puts a
+
+# 1,000個の整数の半角スペース区切りの入力
+gets.split.map(&:to_i)
+
+# 1 行目で与えられる N 個の整数の入力 (large)
+a = gets.split.map(&:to_i)
+a.delete_at(0) # delete_at(要素番号)で特定の要素番号の要素を削除できる
+puts a
