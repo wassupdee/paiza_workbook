@@ -40,3 +40,20 @@ q.times do
         puts a.join(" ")
     end
 end
+
+# 文字列の配列
+h, w, r, c = gets.split.map(&:to_i)
+
+a = []
+
+h.times do
+    a << gets.chomp.split("")　#引数に""を渡すことで、一文字ずつ切り出せる
+end
+
+n = a[r-1][c-1]
+
+if n == "#"
+    puts "Yes"
+else
+    puts "No"
+end
