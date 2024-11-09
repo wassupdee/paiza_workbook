@@ -57,3 +57,19 @@ if n == "#"
 else
     puts "No"
 end
+
+# 商品の検索
+n, q = gets.split.map(&:to_i)
+hash = Hash.new(-1)
+
+(1..n).each do |i|
+    s = gets.chomp
+    unless hash.key?(s)
+        hash[s] = i
+    end
+end
+
+q.times do
+    t = gets.chomp
+    puts hash[t]
+end
