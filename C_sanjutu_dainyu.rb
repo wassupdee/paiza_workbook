@@ -20,3 +20,11 @@ puts ((a+b) * c).pow(2)
 
 a, b, c, d = gets.split.map(&:to_i)
 puts ((a+b) * c)**2 % d
+
+
+# 代入演算
+a, b = gets.split.map(&:to_i)
+n = 10000
+n = n / a　# 普通の割り算だと、小数点やあまりは切り捨てられる
+n = n % b
+puts n
