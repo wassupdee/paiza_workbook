@@ -65,3 +65,21 @@ n = gets.chomp
 p = n.split(" ")
 
 p.each {|s| print s + "," }
+
+
+# 大きな数値を 3 けたごとにカンマ区切りで出力 2
+input = gets.chomp
+
+a = input.split("")
+a.reverse!
+
+b = []
+
+a.each_with_index do |i, index|
+    b << i
+    b << "," if (index+1) % 3 == 0 && index + 1 != a.size     # 3回ループしたら、","を追加したい。Index番号が0から始まることに注意。また、一番最後にはカンマを入れたくない
+
+end
+
+b.reverse!
+puts b.join
