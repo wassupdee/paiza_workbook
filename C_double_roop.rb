@@ -29,3 +29,7 @@ a.each do |i|
     end
 end
 puts ans
+
+# 行列の転置
+# transposeで行列の転置ができる
+
