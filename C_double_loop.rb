@@ -32,4 +32,8 @@ puts ans
 
 # 行列の転置
 # transposeで行列の転置ができる
+n, k = gets.split.map(&:to_i)
 
+a = Array.new(n) { gets.split.map(&:to_i) }
+a = a.transpose
+a.each { |i| puts i.join(' ') }
