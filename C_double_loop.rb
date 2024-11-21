@@ -37,3 +37,20 @@ n, k = gets.split.map(&:to_i)
 a = Array.new(n) { gets.split.map(&:to_i) }
 a = a.transpose
 a.each { |i| puts i.join(' ') }
+
+# かけ算表
+n = gets.to_i
+a = gets.split.map(&:to_i)
+
+b = []
+
+a.each do |i|
+    a.each do |j|
+      b << i * j
+  end
+end
+
+c = b.each_slice(n).to_a #要素数ごとに配列をつくる。Enumeratorクラスが返るので、配列に変換するのも忘れない
+c.each do |k|
+    puts k.join(' ')　#joinメソッドで、横並びの文字列にする
+end
