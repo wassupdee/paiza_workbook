@@ -54,3 +54,24 @@ c = b.each_slice(n).to_a #要素数ごとに配列をつくる。Enumeratorク�
 c.each do |k|
     puts k.join(' ')　#joinメソッドで、横並びの文字列にする
 end
+
+n = gets.to_i
+count = 0
+prime_number = 0
+
+# 素数の個数
+# nまでの整数について１つずつ計算していく
+(1..n).each do |i|
+    #各iについて、その数自体から１つずつ小さい数で割っていく
+    (1..i).each do |j|
+        if i % j == 0
+            count += 1
+        end
+    end
+    if count == 2
+        prime_number += 1
+    end
+    count = 0
+end
+
+puts prime_number  
