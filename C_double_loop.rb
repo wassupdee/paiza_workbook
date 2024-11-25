@@ -75,3 +75,21 @@ prime_number = 0
 end
 
 puts prime_number  
+
+
+#log2
+n = gets.to_i
+multiple = 1
+
+(1..n).each do |i|
+  multiple *= i
+end
+
+count = 0
+
+while multiple % 2 == 0
+    count += 1
+    multiple = multiple / 2
+end
+
+puts count
