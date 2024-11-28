@@ -93,3 +93,24 @@ while multiple % 2 == 0
 end
 
 puts count
+
+# スーパー鳩時計
+a = []
+(0..23).each do |x|
+    (0..59).each do |y|
+        a << [x, y]
+    end
+end
+
+a.each do |i|
+    h, m = i
+    result = h + m
+    if result % 15 == 0 || result == 0
+        puts "FIZZBUZZ"
+    elsif result % 5 == 0
+        puts "BUZZ"
+    elsif result % 3 == 0
+        puts "FIZZ"
+    else puts "\n" # 改行はこれで出力できる
+    end
+end
