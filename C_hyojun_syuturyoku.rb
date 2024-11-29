@@ -83,3 +83,19 @@ end
 
 b.reverse!
 puts b.join
+
+
+# N * N の九九表の出力
+n = gets.to_i
+a = []
+(1..n).each do |i|
+    (1..n).each do |j|
+      a << i * j
+  end
+end
+
+b = a.each_slice(n).to_a
+b.each do |k|
+    puts k.join(" ")
+end
+
