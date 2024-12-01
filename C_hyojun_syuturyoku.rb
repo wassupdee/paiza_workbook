@@ -99,3 +99,14 @@ b.each do |k|
     puts k.join(" ")
 end
 
+
+
+n, m = gets.split.map(&:to_i)
+a = gets.split.map(&:to_i)
+b = gets.split.map(&:to_i)
+
+
+# すべての行の長さと値が不定な 2 次元配列の出力（途中）
+puts a[0, b[0]].join(" ")
+puts a[b[0], b[1]].join(" ")
+puts a[b[0] + b[1], b[2]].join(" ")
