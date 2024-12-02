@@ -120,3 +120,20 @@ end
 c.each do |j|
     puts j.join(" ")
 end
+
+
+# 複数の実数を出力
+q = gets.to_i
+q.times do
+    n, m = gets.split.map(&:to_f)
+    m = m.to_i
+    puts "%.#{m}f" % n.round(m)
+end
+
+## 誤り
+q = gets.to_i
+q.times do
+    n, m = gets.split.map(&:to_f)
+    m = m.to_i
+    puts sprintf("% .#{m}f", n)
+end
