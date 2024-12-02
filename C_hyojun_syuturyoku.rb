@@ -106,7 +106,17 @@ a = gets.split.map(&:to_i)
 b = gets.split.map(&:to_i)
 
 
-# すべての行の長さと値が不定な 2 次元配列の出力（途中）
-puts a[0, b[0]].join(" ")
-puts a[b[0], b[1]].join(" ")
-puts a[b[0] + b[1], b[2]].join(" ")
+# すべての行の長さと値が不定な 2 次元配列の出力
+n, m = gets.split.map(&:to_i)
+a = gets.split.map(&:to_i)
+b = gets.split.map(&:to_i)
+
+c = []
+
+b.each do |i|
+    c << a.shift(i) # 要素を先頭から切り取るメソッド
+end
+
+c.each do |j|
+    puts j.join(" ")
+end
