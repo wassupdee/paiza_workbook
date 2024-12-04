@@ -137,3 +137,14 @@ q.times do
     m = m.to_i
     puts sprintf("% .#{m}f", n)
 end
+
+
+# N 個の数値を M けた半角スペース埋めで出力
+n, m = gets.split.map(&:to_i)
+
+n.times do
+  number = gets.chomp
+  needed_space = ' ' * (m - number.length)
+  puts needed_space + number
+end
+
