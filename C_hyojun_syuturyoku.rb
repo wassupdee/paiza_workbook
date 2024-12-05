@@ -148,3 +148,16 @@ n.times do
   puts needed_space + number
 end
 
+
+# ペアの数値の入った表を罫線入りで出力 2（途中）
+h, w, a, b = gets.split.map(&:to_i)
+bracket = "(#{a}, #{b})"
+
+row = []
+
+w.times do
+    row << bracket # 一番右の縦棒を出力しないようにする必要がある
+end
+
+puts row.inspect
+
